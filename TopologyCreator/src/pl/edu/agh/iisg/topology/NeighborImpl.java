@@ -1,9 +1,9 @@
 package pl.edu.agh.iisg.topology;
 
-import pl.edu.agh.iisg.topology.interfaces.Neighbor;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import pl.edu.agh.iisg.topology.interfaces.Neighbor;
 
 public class NeighborImpl implements Neighbor {
 

@@ -1,10 +1,10 @@
 package pl.edu.agh.iisg.topology;
 
-import pl.edu.agh.iisg.topology.interfaces.Id;
-
 import java.net.InetAddress;
 
-public class IdImpl implements Id{
+import pl.edu.agh.iisg.topology.interfaces.Id;
+
+public class IdImpl implements Id {
 
     private InetAddress address;
 

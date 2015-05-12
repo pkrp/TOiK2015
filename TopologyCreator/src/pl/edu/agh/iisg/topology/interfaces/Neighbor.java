@@ -1,8 +1,8 @@
 package pl.edu.agh.iisg.topology.interfaces;
 
-import pl.edu.agh.iisg.topology.IdImpl;
-
 import java.util.Map;
+
+import pl.edu.agh.iisg.topology.IdImpl;
 
 public interface Neighbor {
 

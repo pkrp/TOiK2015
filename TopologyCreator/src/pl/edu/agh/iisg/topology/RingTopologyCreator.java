@@ -7,7 +7,7 @@ import java.net.InetAddress;
 import java.util.List;
 import java.util.Map;
 
-public class RingTopologyCreator implements TopologyCreator {
+public class RingTopologyCreator extends TopologyCreator {
 
     @Override
     public List<Neighbor> getTopology(Map<InetAddress, Integer> addresses) {
