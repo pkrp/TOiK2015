@@ -4,3 +4,19 @@ Communication/.project
 Communication/.settings
 Communication/.classpath
 
+# Topology Module
+RingTopologyCreator/target/
+RingTopologyCreator/.project
+RingTopologyCreator/.settings
+RingTopologyCreator/.classpath
+
+GridTopologyCreator/target/
+GridTopologyCreator/.project
+GridTopologyCreator/.settings
+GridTopologyCreator/.classpath
+
+TopologyHelper/target/
+TopologyHelper/.project
+TopologyHelper/.settings
+TopologyHelper/.classpath
+
