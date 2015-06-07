@@ -1,4 +1,4 @@
-NOTE: Requires Maven 3.X
+NOTE: Requires Maven 3.X to build properly
 
 Run build script:
 
@@ -9,6 +9,6 @@ Run build script:
 OSGI bundle would be available at: 
 
 ```
-http://localhost:8080/site/plugins/*.jar
+http://localhost:8080/site/plugins/pl.edu.agh.lab.toik.communication-service_*.jar
 ```
 
