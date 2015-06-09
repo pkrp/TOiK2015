@@ -11,11 +11,6 @@ import java.util.Map.Entry;
 
 public class GridTopologyCreatorImpl implements GridTopologyCreator {
 
-	/*
-	 * (non-Javadoc)
-	 * @see pl.edu.agh.iisg.topology.grid.interfaces.GridTopologyCreator#getTopology(java.util.Map)
-	 * Map<InetAddress, Integer> addresses - map of adresses of each workplace with amount of available agents
-	 */
     @Override
     public List<Neighbor> getTopology(Map<InetAddress, Integer> addresses) {
         List<Neighbor> neighbors = createNeighbors(addresses);
