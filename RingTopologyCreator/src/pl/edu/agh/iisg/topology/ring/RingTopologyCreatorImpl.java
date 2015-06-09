@@ -26,8 +26,7 @@ public class RingTopologyCreatorImpl implements RingTopologyCreator {
         return neighbors;
     }
     
-    @Override
-    public List<Neighbor> createNeighbors(Map<InetAddress, Integer> addresses) {
+    private List<Neighbor> createNeighbors(Map<InetAddress, Integer> addresses) {
         List<Neighbor> neighbors = new ArrayList<>();
         for(Entry<InetAddress, Integer> entry: addresses.entrySet()) {
         	for(int i = 0; i < entry.getValue(); i++) {

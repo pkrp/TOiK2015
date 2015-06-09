@@ -13,5 +13,4 @@ public interface GridTopologyCreator {
 
     public List<Neighbor> getTopology(Map<InetAddress, Integer> addresses);
 
-    public List<Neighbor> createNeighbors(Map<InetAddress, Integer> addresses);
 }
