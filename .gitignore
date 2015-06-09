@@ -1,22 +1,9 @@
-# Communication Module
-Communication/target/
-Communication/.project
-Communication/.settings
-Communication/.classpath
+target/
+bin/
 
-# Topology Module
-RingTopologyCreator/target/
-RingTopologyCreator/.project
-RingTopologyCreator/.settings
-RingTopologyCreator/.classpath
+.project
+.settings
+.classpath
+.metadata
 
-GridTopologyCreator/target/
-GridTopologyCreator/.project
-GridTopologyCreator/.settings
-GridTopologyCreator/.classpath
-
-TopologyHelper/target/
-TopologyHelper/.project
-TopologyHelper/.settings
-TopologyHelper/.classpath
 
