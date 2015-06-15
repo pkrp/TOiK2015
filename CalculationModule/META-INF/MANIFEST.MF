@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CalculationModule
+Bundle-SymbolicName: CalculationModule
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: pl.edu.agh.iisg.topology.grid.interfaces,
+ pl.edu.agh.iisg.topology.ring.interfaces;version="1.0.0",
+ pl.edu.agh.toik.common,
+ pl.edu.agh.toik.workplace,
+ toik_calculationalgorithmsmodule,
+ toik_calculationmodule.population
+Export-Package: toik_calculationmodule
