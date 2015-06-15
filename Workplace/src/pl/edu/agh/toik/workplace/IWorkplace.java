@@ -4,6 +4,6 @@ import toik_calculationmodule.population.Population;
 
 public interface IWorkplace {
 
-	public void sendPopulationToAgent(Population population, String workplaceAddress, Integer agentId);
+	public void sendPopulationToAgent(Population population, String targetWorkplaceAddress, Integer targetAgentId);
 	
 }

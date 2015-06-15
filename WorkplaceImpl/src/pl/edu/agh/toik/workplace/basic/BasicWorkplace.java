@@ -66,12 +66,16 @@ public class BasicWorkplace implements IWorkplace, IMessageObserver{
 	}
 	
 	@Override
-	public void sendPopulationToAgent(Population population, String workplaceAddress, Integer agentId) {
-		Message message = new Message();
-		message.setType(MessageType.POPULATION);
-		PopulationMessageValue populationMessageValue = new PopulationMessageValue(agentId, population);
-		message.setValue(populationMessageValue);
-		communicator.sendMessage(message, workplaceAddress);
+	public void sendPopulationToAgent(Population population, String targetWorkplaceAddress, Integer targetAgentId) {
+		if(targetWorkplaceAddress.equals(this.workplaceAddress)){
+			populationMessages.put(targetAgentId, population);
+		} else {
+			Message message = new Message();
+			message.setType(MessageType.POPULATION);
+			PopulationMessageValue populationMessageValue = new PopulationMessageValue(targetAgentId, population);
+			message.setValue(populationMessageValue);
+			communicator.sendMessage(message, targetWorkplaceAddress);
+		}
 	}
 	
 	private void handleConfigurationMessage(Object value){
