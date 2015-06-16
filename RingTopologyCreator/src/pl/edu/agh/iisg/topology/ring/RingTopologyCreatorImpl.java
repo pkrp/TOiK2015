@@ -17,11 +17,13 @@ public class RingTopologyCreatorImpl implements RingTopologyCreator {
 
     	List<Neighbor> neighbors = createNeighbors(addresses);
 
-        for(int i=0;i<neighbors.size()-1;i++) {
-            neighbors.get(i).addNeighbor("next", neighbors.get(i+1));
-        }
-
-        neighbors.get(neighbors.size()-1).addNeighbor("next", neighbors.get(0));
+    	if (neighbors.size() > 0) {
+	        for(int i=0;i<neighbors.size()-1;i++) {
+	            neighbors.get(i).addNeighbor("next", neighbors.get(i+1));
+	        }
+	
+	        neighbors.get(neighbors.size()-1).addNeighbor("next", neighbors.get(0));
+    	}
 
         return neighbors;
     }

@@ -15,8 +15,8 @@ public class GridTopologyCreatorImpl implements GridTopologyCreator {
     public List<Neighbor> getTopology(Map<InetAddress, Integer> addresses) {
         List<Neighbor> neighbors = createNeighbors(addresses);
     	int gridSize = (int) Math.ceil(Math.sqrt(neighbors.size()));
-
-        for(int i = 0; i < neighbors.size(); i++) {
+        
+    	for(int i = 0; i < neighbors.size(); i++) {
             if (i % gridSize != 0) {
             	neighbors.get(i).addNeighbor("left", neighbors.get(i - 1));
             }
@@ -31,8 +31,6 @@ public class GridTopologyCreatorImpl implements GridTopologyCreator {
             }
 
         }
-
-        neighbors.get(neighbors.size()-1).addNeighbor("next", neighbors.get(0));
 
         return neighbors;
     }
