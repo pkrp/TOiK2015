@@ -1,5 +1,8 @@
 package pl.edu.agh.iisg.topology.grid;
 
+import java.util.Dictionary;
+import java.util.Hashtable;
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
@@ -16,8 +19,9 @@ public class Activator implements BundleActivator {
 	 */
 	public void start(BundleContext context) throws Exception {
 		GridTopologyCreator service = new GridTopologyCreatorImpl();
-
-		serviceRegistration = context.registerService(GridTopologyCreator.class, service, null);
+		Dictionary<String, String> props = new Hashtable<String, String>();
+		
+		serviceRegistration = context.registerService(GridTopologyCreator.class, service, props);
 		System.out.println("Grid topology creator is ready!");
 	}
 	

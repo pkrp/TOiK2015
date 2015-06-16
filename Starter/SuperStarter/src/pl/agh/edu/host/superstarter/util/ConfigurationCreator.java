@@ -6,7 +6,9 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
 
+import pl.edu.agh.toik.common.*;
 import pl.edu.agh.iisg.topology.grid.interfaces.Neighbor;
+import toik_calculationalgorithmsmodule.SimulationSubstepsManager;
 
 public class ConfigurationCreator {
 	
@@ -18,10 +20,16 @@ public class ConfigurationCreator {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		configuration.put("topology", topology);
+		configuration.put(ConfigurationParameters.STEPS_COUNT, 10);
+		configuration.put(ConfigurationParameters.AGENTS_COUNT, 1);
+		configuration.put(ConfigurationParameters.POPULATION_SIZE, 10);
+		SimulationSubstepsManager s = new SimulationSubstepsManager();
+		configuration.put(ConfigurationParameters.SUBSTEPS_LIST, s.getAvailableSubstepsForSimulation());
+		configuration.put(ConfigurationParameters.TOPOLOGY, topology);
 		
-		System.out.println(configuration.getProperty("amountOfIteration"));
-		System.out.println(configuration.getProperty("sizeOfPopulation"));
+		
+		//System.out.println(configuration.getProperty("amountOfIteration"));
+		//System.out.println(configuration.getProperty("sizeOfPopulation"));
 
 		return configuration;
 	}

@@ -30,31 +30,39 @@ public class Activator implements BundleActivator {
 	private MessageSender messageSender;
 	/* only for testing */
 	private static Properties conf;
+	static BundleContext mContex;
 	
 	public void start(BundleContext context) throws Exception {
 		Dictionary<String, String> props = new Hashtable<String, String>();
 		context.registerService(Registrator.class, new RegistratorImpl(), props);
 		
 		topologyReference = context.getServiceReference(GridTopologyCreator.class.getName());
-		GridTopologyCreator topologyCreator = (GridTopologyCreator)context.getService(topologyReference);
 		
 		communicationReference = context.getServiceReference(ICommunicator.class.getName());
 		communicator = (ICommunicator)context.getService(communicationReference);
 		messageSender = new MessageSender(communicator);
-		
-		Thread.sleep(5000);
-		
-		List<Neighbor> topology = topologyCreator.getTopology(registratedWorkplaces);
-		
-		ConfigurationCreator configurationCreator = new ConfigurationCreator();
-		conf = configurationCreator.create(topology);
-		messageSender.send(registratedWorkplaces.keySet(), conf , MessageType.CONFIG);
-		
-		Thread.sleep(5000);
-		
-		communicator.addMessageObserver(new MessageHandler());
-		
-		while(true){}
+		mContex= context;
+		new Thread(new Runnable() {
+			public void run() {
+			try {
+			Thread.sleep(500);
+
+
+			GridTopologyCreator topologyCreator = (GridTopologyCreator)mContex.getService(topologyReference);
+			List<Neighbor> topology = topologyCreator.getTopology(registratedWorkplaces);
+			
+			ConfigurationCreator configurationCreator = new ConfigurationCreator();
+			conf = configurationCreator.create(topology);
+			} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			}
+			System.out.println("Topologysucks");
+			messageSender.send(registratedWorkplaces.keySet(), conf , MessageType.CONFIG);
+			communicator.addMessageObserver(new MessageHandler());
+			while(true){}
+			}
+			}).start();
 		
 	}
 

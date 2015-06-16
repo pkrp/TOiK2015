@@ -1,0 +1,516 @@
+
+osgi> !SESSION 2015-06-16 10:49:30.933 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -dev file:C:/Users/Admin/Documents/toik/.metadata/.plugins/org.eclipse.pde.core/New_configuration/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog -console
+
+!ENTRY GridTopologyCreator 4 0 2015-06-16 10:49:31.890
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The activator pl.edu.agh.iisg.topology.grid.Activator for bundle GridTopologyCreator is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:172)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	... 12 more
+Root exception:
+java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY SuperStarter 4 0 2015-06-16 10:49:31.893
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The activator pl.agh.edu.host.superstarter.Activator for bundle SuperStarter is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:172)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.ClassNotFoundException: pl.agh.edu.host.superstarter.Activator cannot be found by SuperStarter_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	... 12 more
+Root exception:
+java.lang.ClassNotFoundException: pl.agh.edu.host.superstarter.Activator cannot be found by SuperStarter_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY TopologyHelper 4 0 2015-06-16 10:49:31.896
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The activator pl.edu.agh.iisg.topology.helper.Activator for bundle TopologyHelper is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:172)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.helper.Activator cannot be found by TopologyHelper_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	... 12 more
+Root exception:
+java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.helper.Activator cannot be found by TopologyHelper_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+
+osgi> 
+
+osgi> 
+
+osgi> ss
+
+Framework is launched.
+
+id	State       Bundle
+0	ACTIVE      org.eclipse.osgi_3.9.1.v20140110-1610
+15	ACTIVE      pl.edu.agh.lab.toik.communication-service_0.0.1.20150616103008
+16	INSTALLED   WorkplaceImpl_1.0.0.qualifier
+17	RESOLVED    Workplace_1.0.0.qualifier
+18	RESOLVED    GridTopologyCreator_1.0.0.qualifier
+19	RESOLVED    Commons_1.0.0.qualifier
+20	RESOLVED    CalculationModulePopulation_1.0.0.qualifier
+21	INSTALLED   CalculationModule_1.0.0.qualifier
+22	RESOLVED    CalculationAlgorithmsModule_1.0.0.qualifier
+23	RESOLVED    SuperStarter_1.0.0.qualifier
+25	RESOLVED    TopologyHelper_1.0.0.qualifier
+
+osgi> uninstall 15 16
+
+osgi> ss
+
+Framework is launched.
+
+id	State       Bundle
+0	ACTIVE      org.eclipse.osgi_3.9.1.v20140110-1610
+17	RESOLVED    Workplace_1.0.0.qualifier
+18	RESOLVED    GridTopologyCreator_1.0.0.qualifier
+19	RESOLVED    Commons_1.0.0.qualifier
+20	RESOLVED    CalculationModulePopulation_1.0.0.qualifier
+21	INSTALLED   CalculationModule_1.0.0.qualifier
+22	RESOLVED    CalculationAlgorithmsModule_1.0.0.qualifier
+23	RESOLVED    SuperStarter_1.0.0.qualifier
+25	RESOLVED    TopologyHelper_1.0.0.qualifier
+
+osgi> uninstall 17 18 19 20 21 22 23 25
+
+osgi> install file:C:\Users\Admin\Documents\TOiK2015\pl.edu.agh.lab.toik.communication-service_0.0.1.20150616103008.jar file:C:\Users\Admin\Documents\toik\GridTopologyCreator
+Bundle id is 26
+
+osgi> ss
+
+Framework is launched.
+
+id	State       Bundle
+0	ACTIVE      org.eclipse.osgi_3.9.1.v20140110-1610
+26	INSTALLED   pl.edu.agh.lab.toik.communication-service_0.0.1.20150616103008
+
+osgi> install file:C:\Users\Admin\Documents\toik\GridTopologyCreator
+install file:C:\Users\Admin\Documents\toik\Commons
+install file:C:\Users\Admin\Documents\toik\Workplace
+install file:C:\Users\Admin\Documents\toik\CalculationAlgorithmsModule
+install file:C:\Users\Admin\Documents\toik\CalculationModule
+install file:C:\Users\Admin\Documents\toik\CalculationModulePopulation
+install file:C:\Users\Admin\Documents\toik\TopologyHelper
+install file:C:\Users\Admin\Documents\toik\SuperStarter
+install file:C:\Users\Admin\Documents\toik\WorkplaceImplBundle id is 27
+
+osgi> Bundle id is 28
+
+osgi> Bundle id is 29
+
+osgi> Bundle id is 30
+
+osgi> Bundle id is 31
+
+osgi> Bundle id is 32
+
+osgi> Bundle id is 33
+
+osgi> Bundle id is 34
+
+osgi> ss
+org.osgi.framework.BundleException: An error occurred trying to read the bundle
+	at org.eclipse.osgi.internal.baseadaptor.BundleInstall.begin(BundleInstall.java:94)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorkerPrivileged(Framework.java:941)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:845)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorker(Framework.java:904)
+	at org.eclipse.osgi.framework.internal.core.Framework.installBundle(Framework.java:840)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:137)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:131)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._install(FrameworkCommandProvider.java:386)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: C:\Users\Admin\Documents\toik\WorkplaceImplss (Nie można odnaleźć określonego pliku)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.osgi.internal.baseadaptor.BundleInstall.begin(BundleInstall.java:56)
+	... 18 more
+Nested Exception:
+java.io.FileNotFoundException: C:\Users\Admin\Documents\toik\WorkplaceImplss (Nie można odnaleźć określonego pliku)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.osgi.internal.baseadaptor.BundleInstall.begin(BundleInstall.java:56)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorkerPrivileged(Framework.java:941)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:845)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorker(Framework.java:904)
+	at org.eclipse.osgi.framework.internal.core.Framework.installBundle(Framework.java:840)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:137)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:131)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._install(FrameworkCommandProvider.java:386)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Nested Exception:
+java.io.FileNotFoundException: C:\Users\Admin\Documents\toik\WorkplaceImplss (Nie można odnaleźć określonego pliku)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at org.eclipse.osgi.internal.baseadaptor.BundleInstall.begin(BundleInstall.java:56)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorkerPrivileged(Framework.java:941)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:845)
+	at org.eclipse.osgi.framework.internal.core.Framework$1.run(Framework.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.Framework.installWorker(Framework.java:904)
+	at org.eclipse.osgi.framework.internal.core.Framework.installBundle(Framework.java:840)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:137)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.installBundle(BundleContextImpl.java:131)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._install(FrameworkCommandProvider.java:386)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+
+osgi> install file:C:\Users\Admin\Documents\toik\WorkplaceImpl
+Bundle id is 36
+
+osgi> ss
+
+Framework is launched.
+
+id	State       Bundle
+0	ACTIVE      org.eclipse.osgi_3.9.1.v20140110-1610
+26	INSTALLED   pl.edu.agh.lab.toik.communication-service_0.0.1.20150616103008
+27	INSTALLED   GridTopologyCreator_1.0.0.qualifier
+28	INSTALLED   Commons_1.0.0.qualifier
+29	INSTALLED   Workplace_1.0.0.qualifier
+30	INSTALLED   CalculationAlgorithmsModule_1.0.0.qualifier
+31	INSTALLED   CalculationModule_1.0.0.qualifier
+32	INSTALLED   CalculationModulePopulation_1.0.0.qualifier
+33	INSTALLED   TopologyHelper_1.0.0.qualifier
+34	INSTALLED   SuperStarter_1.0.0.qualifier
+36	INSTALLED   WorkplaceImpl_1.0.0.qualifier
+
+osgi> start 26 
+
+osgi> start 27
+org.osgi.framework.BundleException: The activator pl.edu.agh.iisg.topology.grid.Activator for bundle GridTopologyCreator is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:172)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:292)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._start(FrameworkCommandProvider.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	... 14 more
+Nested Exception:
+java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:292)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._start(FrameworkCommandProvider.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Nested Exception:
+java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:292)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._start(FrameworkCommandProvider.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+
+osgi> ss
+
+Framework is launched.
+
+id	State       Bundle
+0	ACTIVE      org.eclipse.osgi_3.9.1.v20140110-1610
+26	ACTIVE      pl.edu.agh.lab.toik.communication-service_0.0.1.20150616103008
+27	RESOLVED    GridTopologyCreator_1.0.0.qualifier
+28	RESOLVED    Commons_1.0.0.qualifier
+29	RESOLVED    Workplace_1.0.0.qualifier
+30	RESOLVED    CalculationAlgorithmsModule_1.0.0.qualifier
+31	INSTALLED   CalculationModule_1.0.0.qualifier
+32	RESOLVED    CalculationModulePopulation_1.0.0.qualifier
+33	<<LAZY>>    TopologyHelper_1.0.0.qualifier
+34	<<LAZY>>    SuperStarter_1.0.0.qualifier
+36	INSTALLED   WorkplaceImpl_1.0.0.qualifier
+
+osgi> uninstall 27
+
+osgi> install file:C:\Users\Admin\Documents\toik\GridTopologyCreator
+Bundle id is 37
+
+osgi> start 37
+org.osgi.framework.BundleException: The activator pl.edu.agh.iisg.topology.grid.Activator for bundle GridTopologyCreator is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:172)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:292)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._start(FrameworkCommandProvider.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	... 14 more
+Nested Exception:
+java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:292)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._start(FrameworkCommandProvider.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+Nested Exception:
+java.lang.ClassNotFoundException: pl.edu.agh.iisg.topology.grid.Activator cannot be found by GridTopologyCreator_1.0.0.qualifier
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:165)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:679)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:292)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandProvider._start(FrameworkCommandProvider.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.FrameworkCommandInterpreter.execute(FrameworkCommandInterpreter.java:209)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.docommand(FrameworkConsole.java:155)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.runConsole(FrameworkConsole.java:140)
+	at org.eclipse.osgi.framework.internal.core.FrameworkConsole.run(FrameworkConsole.java:104)
+	at java.lang.Thread.run(Unknown Source)
+
+osgi> 
