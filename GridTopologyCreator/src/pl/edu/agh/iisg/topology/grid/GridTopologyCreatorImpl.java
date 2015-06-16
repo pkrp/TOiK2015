@@ -16,24 +16,20 @@ public class GridTopologyCreatorImpl implements GridTopologyCreator {
         List<Neighbor> neighbors = createNeighbors(addresses);
     	int gridSize = (int) Math.ceil(Math.sqrt(neighbors.size()));
         
-        if (neighbors.size() > 0) {
-        	for(int i = 0; i < neighbors.size(); i++) {
-                if (i % gridSize != 0) {
-                	neighbors.get(i).addNeighbor("left", neighbors.get(i - 1));
-                }
-                if (i % gridSize != gridSize - 1 && i < neighbors.size() - 1) {
-                	neighbors.get(i).addNeighbor("right", neighbors.get(i + 1));
-                }
-                if (i - gridSize >= 0) {
-                	neighbors.get(i).addNeighbor("top", neighbors.get(i - gridSize));
-                }
-                if (i + gridSize <= neighbors.size() - 1) {
-                	neighbors.get(i).addNeighbor("bottom", neighbors.get(i + gridSize));
-                }
-
+    	for(int i = 0; i < neighbors.size(); i++) {
+            if (i % gridSize != 0) {
+            	neighbors.get(i).addNeighbor("left", neighbors.get(i - 1));
             }
-        	
-        	neighbors.get(neighbors.size()-1).addNeighbor("next", neighbors.get(0));
+            if (i % gridSize != gridSize - 1 && i < neighbors.size() - 1) {
+            	neighbors.get(i).addNeighbor("right", neighbors.get(i + 1));
+            }
+            if (i - gridSize >= 0) {
+            	neighbors.get(i).addNeighbor("top", neighbors.get(i - gridSize));
+            }
+            if (i + gridSize <= neighbors.size() - 1) {
+            	neighbors.get(i).addNeighbor("bottom", neighbors.get(i + gridSize));
+            }
+
         }
 
         return neighbors;
